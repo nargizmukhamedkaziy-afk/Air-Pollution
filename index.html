@@ -200,9 +200,8 @@ footer a{color:#fff}
     <h1>Beyond air quality numbers</h1>
     <p class="lead"><b>Taza Aua</b> (“clean air”) is a proposed national AI system that warns people <i>before</i> bad-air days and helps hold industrial emitters to account. Should Kazakhstan build it? This site weighs the evidence and the full bill.</p>
     <div class="tiles">
-      <div class="tile" style="--c:var(--red)"><div class="n">~12,700</div><div class="l">premature deaths a year from PM2.5 (World Bank regional estimate, 2021 data)</div></div>
-      <div class="tile" style="--c:var(--amber)"><div class="n">5.5–6%</div><div class="l">of GDP lost: USD 10.8–12.7 billion a year</div></div>
-      <div class="tile" style="--c:var(--orange)"><div class="n">21×</div><div class="l">the WHO guideline: Karaganda's annual PM2.5 in 2024</div></div>
+      <div class="tile" style="--c:var(--orange)"><div class="n">65,000+</div><div class="l">premature deaths across Central Asia in 2021 attributable to PM2.5 (World Bank regional estimate)</div></div>
+      <div class="tile" style="--c:var(--red)"><div class="n">~12,700</div><div class="l">premature deaths a year in Kazakhstan attributable to PM2.5 (World Bank national estimate, 2021 data)</div></div>
       <div class="tile" style="--c:var(--violet)"><div class="n">57.8%</div><div class="l">of harmful substances in emissions are actually monitored</div></div>
     </div>
     <a class="verdict-pill" href="#verdict">Verdict: <b>Yes — but only under six conditions</b> →</a>
@@ -222,7 +221,7 @@ footer a{color:#fff}
 <section id="problem">
  <div class="wrap">
   <div class="eyebrow" style="--c:var(--red)">Section 1 · The problem</div>
-  <h2>Air that kills, unequally</h2>
+  <h2>The health burden of air pollution and its unequal distribution</h2>
   <p class="intro">Air pollution is one of Kazakhstan's largest preventable causes of death, and it hits industrial cities hardest. Fine particles (PM2.5) reach the lungs and bloodstream, causing heart disease, stroke, COPD, respiratory infections, lung cancer, diabetes, preterm births and childhood asthma <a class="cite" href="#kelly2024">Kelly et al., 2024</a>.</p>
 
   <h3>Estimated premature deaths attributable to air pollution: the figures depend on the method</h3>
@@ -447,10 +446,10 @@ footer a{color:#fff}
   <div class="panel on" id="b2">
    <div class="card">
     <h3>Try the numbers yourself</h3>
-    <p class="muted" style="font-size:.92rem">Defaults reproduce the paper's cost estimate (Table 4.4): 1,090 sensors, 806.6 million tenge one-off and 478.8 million tenge a year. The sensor and subscriber numbers are assumptions you can test. Wages: 2025 national average 443,315 tenge/month; ICT pay 1.9× that <a class="cite" href="#bureauof2026c">BNS, 2026c</a>, <a class="cite" href="#bureauof2026d">2026d</a>. SMS: 10–20 tenge per message <a class="cite" href="#sentdm2025">Sent.dm, 2025</a>.</p>
+    <p class="muted" style="font-size:.92rem">Covers all <b>70 monitored settlements</b>: Almaty keeps its existing 296 sensors, and new sensors go to the other 69 (10 high-pollution + 59 others). Defaults reproduce the paper's cost estimate (Table 4.4): 1,090 new sensors, 806.6 million tenge one-off and 478.8 million tenge a year. The sensor and subscriber numbers are assumptions you can test. Wages: 2025 national average 443,315 tenge/month; ICT pay 1.9× that <a class="cite" href="#bureauof2026b">BNS, 2026b</a>, <a class="cite" href="#bureauof2026c">2026c</a>. SMS: 10–20 tenge per message <a class="cite" href="#sentdm2025">Sent.dm, 2025</a>.</p>
     <div class="calc">
      <div>
-      <div class="ctrl"><label>Sensors per high-pollution city (10 cities) <output id="o_a"></output></label><input type="range" id="a" min="10" max="150" step="5" value="50"></div>
+      <div class="ctrl"><label>Sensors per high-pollution city (10 cities besides Almaty) <output id="o_a"></output></label><input type="range" id="a" min="10" max="150" step="5" value="50"></div>
       <div class="ctrl"><label>Sensors per other settlement (59) <output id="o_b"></output></label><input type="range" id="b" min="0" max="40" step="1" value="10"></div>
       <div class="ctrl"><label>Sensor life in harsh winters (years) <output id="o_c"></output></label><input type="range" id="c" min="1" max="6" step="1" value="3"></div>
       <div class="ctrl"><label>Opt-in SMS subscribers <output id="o_d"></output></label><input type="range" id="d" min="0" max="500000" step="10000" value="100000"></div>
@@ -585,8 +584,8 @@ footer a{color:#fff}
 <li id="bureauof2023">Bureau of National Statistics. (2023). On the state of air protection in the Republic of Kazakhstan (2022). Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/environment/stat-eco/publications/68164/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/environment/stat-eco/publications/68164/</a></li>
 <li id="bureauof2025">Bureau of National Statistics. (2025). On the state of air protection in the Republic of Kazakhstan (2024). Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/environment/stat-eco/publications/412258/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/environment/stat-eco/publications/412258/</a></li>
 <li id="bureauof2026a">Bureau of National Statistics. (2026a, June 29). On the state of air protection in the Republic of Kazakhstan in 2025. Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/environment/stat-eco/publications/505519/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/environment/stat-eco/publications/505519/</a></li>
-<li id="bureauof2026c">Bureau of National Statistics. (2026c). Average monthly nominal wage in the Republic of Kazakhstan for 2025. Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/509380/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/509380/</a></li>
-<li id="bureauof2026d">Bureau of National Statistics. (2026d). Wages in the Republic of Kazakhstan, IV quarter 2025. Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/475383/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/475383/</a></li>
+<li id="bureauof2026b">Bureau of National Statistics. (2026b). Average monthly nominal wage in the Republic of Kazakhstan for 2025. Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/509380/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/509380/</a></li>
+<li id="bureauof2026c">Bureau of National Statistics. (2026c). Wages in the Republic of Kazakhstan, IV quarter 2025. Agency for Strategic Planning and Reforms of the Republic of Kazakhstan. <a href="https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/475383/" target="_blank" rel="noopener">https://stat.gov.kz/en/industries/labor-and-income/stat-wags/publications/475383/</a></li>
 <li id="buribayeva2026">Buribayeva, M., Khamzina, Z., &amp; Buribayev, Y. (2026). Potential negative effects of artificial intelligence in Kazakhstan&#x27;s public sector: An analysis of hidden risks. Frontiers in Artificial Intelligence, 9, Article 1781993. <a href="https://doi.org/10.3389/frai.2026.1781993" target="_blank" rel="noopener">https://doi.org/10.3389/frai.2026.1781993</a></li>
 <li id="centralasia2025">Central Asia Climate Foundation. (2025, September 18). Kazakhstan: Industrial emissions allegedly among main reasons for poor air quality. Business &amp; Human Rights Resource Centre. <a href="https://www.business-humanrights.org/en/latest-news/kazakhstan-industrial-emissions-allegedly-among-main-reasons-for-poor-air-quality/" target="_blank" rel="noopener">https://www.business-humanrights.org/en/latest-news/kazakhstan-industrial-emissions-allegedly-among-main-reasons-for-poor-air-quality/</a></li>
 <li id="centralasia2026">Central Asia Climate Foundation. (2026, February 27). Eleven settlements in Kazakhstan recorded high air pollution levels in 2025. <a href="https://caclimate.fund/en/novosti/eleven-settlements-in-kazakhstan-recorded-high-air-pollution-levels-in-2025" target="_blank" rel="noopener">https://caclimate.fund/en/novosti/eleven-settlements-in-kazakhstan-recorded-high-air-pollution-levels-in-2025</a></li>
