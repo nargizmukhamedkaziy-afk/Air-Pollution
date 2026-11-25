@@ -456,13 +456,13 @@ footer a{color:#fff}
       <div class="ctrl"><label>Opt-in SMS subscribers <output id="o_d"></output></label><input type="range" id="d" min="0" max="500000" step="10000" value="100000"></div>
       <div class="ctrl"><label>Alert days a year <output id="o_e"></output></label><input type="range" id="e" min="0" max="90" step="5" value="30"></div>
       <div class="ctrl"><label>SMS price (tenge) <output id="o_f"></output></label><input type="range" id="f" min="10" max="20" step="1" value="15"></div>
-      <p class="cap">Fixed staff (6 data scientists, 4 analysts, 10 technicians, 2 doctors): 164.9 million tenge a year, a lower bound. USD 1 = 520 tenge.</p>
+      <p class="cap">Fixed staff (6 data scientists, 4 analysts, 10 technicians, 2 doctors): 164.9 million tenge a year, a lower bound. USD 1 = 460 tenge.</p>
      </div>
      <div>
       <div class="res">
        <div class="tile" style="--c:var(--blue)"><div class="n" id="r_one"></div><div class="l">one-off, million tenge (sensors)</div></div>
        <div class="tile" style="--c:var(--orange)"><div class="n" id="r_ann"></div><div class="l">per year, million tenge</div></div>
-       <div class="tile" style="--c:var(--violet)"><div class="n" id="r_st"></div><div class="l">reference stations the yearly cost could buy (~52m tenge each) <a class="cite" href="#interamerican2025">IDB, 2025</a></div></div>
+       <div class="tile" style="--c:var(--violet)"><div class="n" id="r_st"></div><div class="l">reference stations the yearly cost could buy (~46m tenge each) <a class="cite" href="#interamerican2025">IDB, 2025</a></div></div>
        <div class="tile" style="--c:var(--aqua)"><div class="n" id="r_pct"></div><div class="l">of the yearly damage from PM2.5 (USD 10.8–12.7 bn)</div></div>
       </div>
       <div id="costChart"></div>
@@ -471,7 +471,7 @@ footer a{color:#fff}
    </div>
    
    <div class="grid2">
-    <div class="card"><h3>Against the harm</h3><p>About USD 0.92 m a year is <b>under 0.01%</b> of the USD 10.8–12.7 bn yearly damage <a class="cite" href="#worldbank2025">World Bank, 2025</a>. But low cost is not proven benefit: the system is worth its price only if alerts change behaviour, which Port Talbot warns may not happen.</p></div>
+    <div class="card"><h3>Against the harm</h3><p>About USD 1.04 m a year is <b>under 0.01%</b> of the USD 10.8–12.7 bn yearly damage <a class="cite" href="#worldbank2025">World Bank, 2025</a>. But low cost is not proven benefit: the system is worth its price only if alerts change behaviour, which Port Talbot warns may not happen.</p></div>
     <div class="card"><h3>Who pays, who profits</h3><p>The state funds Layers 1–2 as public health; Layer 3 needs independent university or donor funding. Mobile operators, sensor makers and cloud providers gain. Foreign services such as Google's API would create dependence, so open models hosted in Kazakhstan are preferred.</p></div>
    </div>
   </div>
@@ -554,7 +554,7 @@ footer a{color:#fff}
   </div>
   <div class="grid2" style="margin-top:22px">
    <div class="callout" style="--cb:#fff;--cc:var(--red)"><b class="t">If only Layer 1 is built: no</b>The money would do more good on automatic reference stations in industrial cities and a legal duty to publish factories' emissions data, neither of which needs AI.</div>
-   <div class="callout" style="--cb:#fff;--cc:var(--violet)"><b class="t">Why the bill makes this a real choice</b>At about 479 million tenge a year, roughly nine reference stations, it is worth building only if Layer 3 turns data into inspections, and a pilot proves alerts reduce hospital visits.</div>
+   <div class="callout" style="--cb:#fff;--cc:var(--violet)"><b class="t">Why the bill makes this a real choice</b>At about 479 million tenge a year, roughly ten reference stations, it is worth building only if Layer 3 turns data into inspections, and a pilot proves alerts reduce hospital visits.</div>
   </div>
   <p class="big-q" style="font-size:1.35rem">Better technology does not automatically produce better governance. It can make it harder for weak governance to hide, if the institutions agree to be held to what the data show.</p>
  </div>
@@ -702,7 +702,7 @@ function drawCA(){hbar(document.getElementById('causeChart'),CA,{aria:'Deaths by
   tip:r=>`<b>${r.k}</b><br>${r.v.toLocaleString()} deaths a year · ${fmt(r.v/8134*100)}% of 8,134`})}
 
 /* calculator */
-const SENSOR=740000, STAFF=164.91318, RATE=520, STATION=52;
+const SENSOR=740000, STAFF=164.91318, RATE=460, STATION=46;
 const ids=['a','b','c','d','e','f'];
 function calc(){
   const v=Object.fromEntries(ids.map(i=>[i,+document.getElementById(i).value]));
